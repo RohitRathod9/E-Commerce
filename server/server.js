@@ -38,7 +38,7 @@ if (process.env.NODE_ENV === "development") {
 }
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin:"https://e-commerce-x07z.onrender.com",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,

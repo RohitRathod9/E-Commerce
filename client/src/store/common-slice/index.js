@@ -14,7 +14,7 @@ export const getFeatureImages = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/common/feature/get`
+        `https://e-commerce-x07z.onrender.com/api/common/feature/get`
       );
       return response.data;
     } catch (error) {
@@ -31,7 +31,7 @@ export const addFeatureImage = createAsyncThunk(
   async (image, { dispatch, rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/common/feature/add`,
+        `https://e-commerce-x07z.onrender.com/api/common/feature/add`,
         { image }
       );
 
